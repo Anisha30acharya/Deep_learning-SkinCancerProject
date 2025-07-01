@@ -12,20 +12,6 @@ Flask (Web Framework)
 TensorFlow / Keras (Deep Learning)
 HTML / CSS (Frontend)
 
-🔧 Project Folder Structure
-graphql
-Copy
-Edit
-skin cancer project/
-├── .idea/                         # PyCharm project settings (optional)
-├── flask2/
-│   ├── app.py                      # Flask web app backend
-│   ├── HAM10000_metadata.csv        # Metadata for skin lesion images
-│   ├── skin_cancer_model.h5         # Trained CNN model
-│   ├── class_names.pkl              # Pickle file with class labels
-│   └── static/
-│       └── uploads/                 # Folder for test images
-
 📌 Key Components
 ---------------------
 1. app.py (Flask Web App)
