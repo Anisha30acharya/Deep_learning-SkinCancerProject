@@ -1,85 +1,89 @@
 🩺 Skin Cancer Image Classification Web App
------------------------------------------------------
-📌 Project Overview:
--------------------------
-This project is a web-based skin cancer classification tool.
-It uses a trained deep learning model (CNN) to predict the type of skin lesion from uploaded images.
-
-✅ Built using:
+----------------------------------------------
+📌 Project Overview
 ---------------------
+This project is a web-based skin cancer classification tool.
+It uses a trained deep learning CNN model to predict the type of skin lesion from uploaded images.
+
+Built using:
+---------------
 Python
-
 Flask (Web Framework)
+TensorFlow / Keras (Deep Learning)
+HTML / CSS (Frontend)
 
-TensorFlow / Keras (For Model)
-
-HTML / CSS (For Web Interface)
-
-🔧 Project Folder Structure:
---------------------------------
+🔧 Project Folder Structure
+graphql
+Copy
+Edit
 skin cancer project/
-├── .idea/                           # PyCharm project files (optional)
+├── .idea/                         # PyCharm project settings (optional)
 ├── flask2/
-│   ├── app.py                       # Main Flask application
-│   ├── HAM10000_metadata.csv        # Dataset metadata (reference info)
-│   ├── skin_cancer_model.h5         # Trained CNN model file
-│   ├── class_names.pkl              # Pickle file containing class label names
+│   ├── app.py                      # Flask web app backend
+│   ├── HAM10000_metadata.csv        # Metadata for skin lesion images
+│   ├── skin_cancer_model.h5         # Trained CNN model
+│   ├── class_names.pkl              # Pickle file with class labels
 │   └── static/
-│       └── uploads/                 # Sample test images for testing the app
+│       └── uploads/                 # Folder for test images
 
-Flask backend code to handle:
-✅ Image upload
-✅ Model loading
-✅ Prediction generation
-✅ Displaying results on the web page
+📌 Key Components
+---------------------
+1. app.py (Flask Web App)
+Handles:
 
-skin_cancer_model.h5 (Trained Model):
+Image upload
 
-Pre-trained Convolutional Neural Network (CNN)
+Model loading
 
-Accepts skin lesion images and outputs predicted cancer type
+Prediction generation
 
-HAM10000_metadata.csv (Dataset Info):
+Displaying results on a web page
 
-Contains the original metadata about the images (age, sex, lesion type, etc.)
+2. skin_cancer_model.h5 (Trained Model)
+Pre-trained CNN for skin lesion classification
 
-Used for reference and analysis
+Takes an image input and outputs predicted skin cancer type
 
-class_names.pkl (Class Labels):
+3. class_names.pkl (Class Label Mapping)
+Maps class indices (numeric) to readable labels like:
 
-Python Pickle file
+Melanoma
 
-Maps predicted class indices to human-readable class names (like melanoma, nv, bcc, etc.)
+Nevus
 
-static/uploads/
+BCC (Basal Cell Carcinoma)
 
-Contains sample skin lesion images for testing the app
+etc.
 
-User can upload new images via the web interface
+4. static/uploads/ (Sample Images Folder)
+Contains sample lesion images for testing
 
-🎯 Project Features:
-----------------------------
-✅ Upload a skin lesion image via web browser
-✅ Get real-time classification result (e.g., Melanoma, Nevus, BCC, etc.)
-✅ Displays predicted class with confidence scores (optional)
+Users can upload their own images through the web app
 
-🧱 Technologies Used:
+🎯 Project Features
+-------------------------
+Upload a skin lesion image via web browser
+
+Get instant classification results (example: Melanoma, BCC, NV)
+
+Display predicted class and optionally confidence scores
+
+🧱 Technologies Used
 ----------------------
 Python
 
-Flask (Web framework)
+Flask
 
-TensorFlow/Keras (Model building & training)
+TensorFlow / Keras
 
-HTML / CSS (For Frontend)
+HTML / CSS
 
-Pickle (For saving class labels)
+Pickle (for storing class labels)
 
-✅ Purpose of the Project:
+✅ Purpose of the Project
 -------------------------------
-Early detection support for skin cancer using AI
+To demonstrate AI-based skin cancer detection
 
-Demonstrate end-to-end ML deployment with Flask
+To learn model deployment with Flask
 
-Educational tool for medical image classification
-
+For educational and research purposes (Not for real-world diagnosis)
