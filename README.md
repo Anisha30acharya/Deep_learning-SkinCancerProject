@@ -31,34 +31,34 @@ skin cancer project/
 1. app.py (Flask Web App)
 Handles:
 
-Image upload
+ Image upload
 
-Model loading
+ Model loading
 
-Prediction generation
+ Prediction generation
 
-Displaying results on a web page
+ Displaying results on a web page
 
 2. skin_cancer_model.h5 (Trained Model)
-Pre-trained CNN for skin lesion classification
+ Pre-trained CNN for skin lesion classification
 
-Takes an image input and outputs predicted skin cancer type
+ Takes an image input and outputs predicted skin cancer type
 
 3. class_names.pkl (Class Label Mapping)
 Maps class indices (numeric) to readable labels like:
 
-Melanoma
+ Melanoma
 
-Nevus
+ Nevus
 
-BCC (Basal Cell Carcinoma)
+ BCC (Basal Cell Carcinoma)
 
-etc.
+ etc.
 
 4. static/uploads/ (Sample Images Folder)
-Contains sample lesion images for testing
+ Contains sample lesion images for testing
 
-Users can upload their own images through the web app
+ Users can upload their own images through the web app
 
 🎯 Project Features
 -------------------------
